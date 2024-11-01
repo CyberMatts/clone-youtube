@@ -4,18 +4,51 @@
 }
 .logo-top {
   width: 140px;
+  margin: 10px;
 }
+
 .cabeca {
   display: flex;
   align-items: center;
   cursor: pointer;
   background-color: rgb(244, 246, 248);
+  position: fixed;
+  width: 100%;
 }
-.microfone {
+#menu {
+  display: flex;
+  position: fixed;
 }
-.mic {
-  background-color: rgb(228, 227, 227);
-  width: 25px;
+.btn-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+}
+
+#menuList {
+  background-color: rgb(244, 246, 248);
+  color: #000000;
+  transition: transform 0.3s ease;
+  width: 120px;
+  height: 500px;
+}
+.menu-list-hidden {
+  display: none;
+}
+.menu-list-visible {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+}
+span {
+}
+.list {
+  flex-direction: column;
+  list-style: none;
 }
 
 .icons-profile {
