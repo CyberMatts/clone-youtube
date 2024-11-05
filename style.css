@@ -91,3 +91,11 @@ span {
 .search-icon {
   font-size: 20px;
 }
+
+#video {
+  display: flex;
+  margin-left: 120px;
+}
+iframe {
+  border-radius: 10px;
+}
