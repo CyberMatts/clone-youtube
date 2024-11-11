@@ -30,8 +30,8 @@
   background-color: rgb(244, 246, 248);
   color: #000000;
   transition: transform 0.3s ease;
-  width: 120px;
-  height: 500px;
+  width: 200px;
+  height: 1000px;
 }
 .menu-list-hidden {
   display: none;
@@ -40,15 +40,28 @@
   display: flex;
   position: absolute;
   top: 50px;
-  background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1em;
+  text-align: center;
 }
-span {
+.span-li {
+  margin-left: 10px;
 }
 .list {
+  display: flex;
   flex-direction: column;
   list-style: none;
+  align-items: flex-start;
+  gap: 10px;
+}
+.btn-list {
+  border: 0;
+  background: none;
+  display: flex;
+  align-items: center;
+}
+.btn-list:hover {
+  background-color: #9b9b9b;
 }
 
 .icons-profile {
@@ -94,8 +107,12 @@ span {
 
 #video {
   display: flex;
-  margin-left: 120px;
+  margin-left: 130px;
 }
 iframe {
   border-radius: 10px;
+  max-width: 800x;
+}
+
+.video-description {
 }
