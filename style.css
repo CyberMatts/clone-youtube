@@ -27,11 +27,13 @@
 }
 
 #menuList {
+  cursor: default;
   background-color: rgb(244, 246, 248);
   color: #000000;
   transition: transform 0.3s ease;
   width: 200px;
   height: 1000px;
+  font-size: 18px;
 }
 .menu-list-hidden {
   display: none;
@@ -55,15 +57,25 @@
   gap: 10px;
 }
 .btn-list {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
   border: 0;
   background: none;
   display: flex;
   align-items: center;
 }
 .btn-list:hover {
+  border-radius: 5px;
   background-color: #9b9b9b;
 }
-
+.div-list {
+  width: 130%;
+  border-bottom: 1px solid #000000;
+}
+.you {
+  font-weight: bold;
+}
 .icons-profile {
   display: flex;
   gap: 10px;
@@ -108,6 +120,7 @@
 #video {
   display: flex;
   margin-left: 130px;
+  max-width: 60%;
 }
 iframe {
   border-radius: 10px;
@@ -115,4 +128,84 @@ iframe {
 }
 
 .video-description {
+  display: flex;
+  margin-left: 130px;
+}
+.video-main {
+  display: flex;
+  flex-direction: column;
+}
+.botoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.sub {
+  border-radius: 10px;
+  border: none;
+  width: 110px;
+  height: 35px;
+  background: #9b9b9b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 250px;
+}
+.inscrever {
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  width: 110px;
+  height: 35px;
+}
+.like {
+  border-radius: 10px;
+  border: none;
+  width: 110px;
+  height: 35px;
+  background: #9b9b9b;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.like-up {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+.like-down {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+.share {
+  border-radius: 10px;
+  border: none;
+  width: 110px;
+  height: 35px;
+  background: #9b9b9b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.share-button {
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+.info-canal {
+  display: flex;
+  align-items: center;
+  margin-left: 130px;
+}
+.like-share {
+  display: flex;
+  margin-left: 500px;
+  gap: 10px;
 }

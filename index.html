@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/829797727a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -29,17 +30,18 @@
             <div id="menu">
                 <nav id="menuList" class="menu-list-hidden">
                     <ul class="list">
-                        <button class="btn-list"> <img src=" ./img/inicio.svg" alt="">
-                            <span class="span-li">Inicio</span>
-                        </button>
-                        <button class="btn-list"><img src="./img/shorts.svg" alt="shorts">
-                            <span class="span-li">Shorts</span>
-                        </button>
-                        <button class="btn-list"><img src="./img/inscrições.svg" alt="inscrições">
-                            <span class="span-li">Inscrições</span>
-                        </button>
-
-                        <span>Você</span>
+                        <div class="div-list">
+                            <button class="btn-list"> <img src=" ./img/inicio.svg" alt="">
+                                <span class="span-li">Inicio</span>
+                            </button>
+                            <button class="btn-list"><img src="./img/shorts.svg" alt="shorts">
+                                <span class="span-li">Shorts</span>
+                            </button>
+                            <button class="btn-list"><img src="./img/inscrições.svg" alt="inscrições">
+                                <span class="span-li">Inscrições</span>
+                            </button>
+                        </div>
+                        <p class="you">Você</p>
                         <button class="btn-list"><img src="./img/historico.svg" alt="Hístico">
                             <span class="span-li">Hístico</span>
                         </button>
@@ -64,28 +66,56 @@
         </div>
     </header>
     <main>
-        <div id="video">
-            <iframe width="1236" height="695" src="https://www.youtube.com/embed/fypvUT4vBsA" title="Domine o CSS e Impressione com Experiências Visuais Incríveis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </h2>
-        </div>
-        <div class="video-description">
-            <h2>Domine o CSS e Impressione com Experiências Visuais Incríveis
-            </h2>
-        </div>
-        <div class="botoes">
-            <img src="" alt="">
-            <h2>DIO</h2>
-            <button></button>
+        <div class="video-main">
+            <div id="video">
+                <iframe width="1236" height="695" src="https://www.youtube.com/embed/fypvUT4vBsA" title="Domine o CSS e Impressione com Experiências Visuais Incríveis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </h2>
+            </div>
+            <div class="video-description">
+                <h2>Domine o CSS e Impressione com Experiências Visuais Incríveis
+                </h2>
+            </div>
+            <section class="botoes">
+                <div class="canal">
+                    <img src="./img/profille.svg" alt="">
+                    <h2>DIO<img src="./img/music.svg" alt=""></h2>
+                    <br>
+                    <p>200 mil inscritos</p>
+                </div>
+                <div class="sub">
+                    <button class="inscrever">
+                        Inscrever-se
+                    </button>
+                </div>
+                <div class="like-share">
+                    <div class="like">
+                        <button class="like-up">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                        </button>
+                        |
+                        <button class="like-down">
+                            <i class="fa-regular fa-thumbs-down"></i>
+                        </button>
+                    </div>
+                    <div class="share">
+                        <button class="share-button">
+                            <i class="fa-solid fa-share"></i> Compartilhar
+                        </button>
+                    </div>
+                </div>
+            </section>
         </div>
         <div class="recomendacoes"></div>
         <div class="pos-video"></div>
         <div class="descricao"></div>
         <div class="comentarios"></div>
+
     </main>
     <footer>
 
     </footer>
     <script src="script.js"></script>
+
 </body>
 
 </html>
