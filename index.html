@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="cabeca">
-            <img class="logo-top" class="logo" src="./img/YouTube-Logo.wine.svg" alt="logo do Youtube">
+            <img id="logo-top" class="logo" src="./img/YouTube-Logo.wine.svg" alt="logo do Youtube">
             <div class="search-bar-container">
                 <input type="text" class="search-input" placeholder="Pesquisar">
                 <button class="search-button" title="pesquisar">
@@ -21,9 +21,9 @@
 
             </div>
             <div class="icons-profile">
-                <div class="criar"> <img src="./img/criar.svg" alt="Upload"></div>
-                <div class="notificacoes"><img src="./img/notificação.svg" alt=""></div>
-                <div class="profille"><img src="./img/profille.svg" alt="profile"></div>
+                <div id="criar" class="icon"> <img src="./img/criar.svg" alt="Upload"></div>
+                <div id="notificacoes" class="icon"><img src="./img/notificação.svg" alt=""></div>
+                <div id="profille" class="icon"><img src="./img/profille.svg" alt="profile"></div>
             </div>
             <button class="btn-menu" title="menu"><img src="./img/menu.svg" alt="">
             </button>
@@ -31,33 +31,33 @@
                 <nav id="menuList" class="menu-list-hidden">
                     <ul class="list">
                         <div class="div-list">
-                            <button class="btn-list"> <img src=" ./img/inicio.svg" alt="">
+                            <button class="btn-list"> <img class="icon" src=" ./img/inicio.svg" alt="">
                                 <span class="span-li">Inicio</span>
                             </button>
-                            <button class="btn-list"><img src="./img/shorts.svg" alt="shorts">
+                            <button class="btn-list"><img class="icon" src="./img/shorts.svg" alt="shorts">
                                 <span class="span-li">Shorts</span>
                             </button>
-                            <button class="btn-list"><img src="./img/inscrições.svg" alt="inscrições">
+                            <button class="btn-list"><img class="icon" src="./img/inscrições.svg" alt="inscrições">
                                 <span class="span-li">Inscrições</span>
                             </button>
                         </div>
                         <p class="you">Você</p>
-                        <button class="btn-list"><img src="./img/historico.svg" alt="Hístico">
+                        <button class="btn-list"><img class="icon" src="./img/historico.svg" alt="Hístico">
                             <span class="span-li">Hístico</span>
                         </button>
-                        <button class="btn-list"><img src="./img/playlist.svg" alt="Playlists">
+                        <button class="btn-list"><img class="icon" src="./img/playlist.svg" alt="Playlists">
                             <span class="span-li">Playlists</span>
                         </button>
-                        <button class="btn-list"><img src="./img/seus-videos.svg" alt="Seus vídeos">
+                        <button class="btn-list"><img class="icon" src="./img/seus-videos.svg" alt="Seus vídeos">
                             <span class="span-li">Seus vídeos</span>
                         </button>
-                        <button class="btn-list"><img src="./img/mais-tarde.svg" alt="Assistir mais tarde">
+                        <button class="btn-list"><img class="icon" src="./img/mais-tarde.svg" alt="Assistir mais tarde">
                             <span class="span-li">Assistir mais tarde</span>
                         </button>
-                        <button class="btn-list"><img src="./img/videos-que-gostei.svg" alt="Vídeos com Gostei">
+                        <button class="btn-list"><img class="icon" src="./img/videos-que-gostei.svg" alt="Vídeos com Gostei">
                             <span class="span-li">Vídeos com Gostei</span>
                         </button>
-                        <button class="btn-list"><img src="./img/clips.svg" alt="Seus Clipes">
+                        <button class="btn-list"><img class="icon" src="./img/clips.svg" alt="Seus Clipes">
                             <span class="span-li">Seus Clipes</span>
                         </button>
                     </ul>
@@ -76,10 +76,11 @@
                 </h2>
             </div>
             <section class="botoes">
-                <div class="canal">
+                <div class="img-canal">
                     <img src="./img/profille.svg" alt="">
-                    <h2>DIO<img src="./img/music.svg" alt=""></h2>
-                    <br>
+                </div>
+                <div class="canal">
+                    <h2>DIO<img class="verificado" src="./img/music.svg" alt=""></h2>
                     <p>200 mil inscritos</p>
                 </div>
                 <div class="sub">
@@ -105,9 +106,22 @@
                 </div>
             </section>
         </div>
-        <div class="recomendacoes"></div>
-        <div class="pos-video"></div>
-        <div class="descricao"></div>
+        <div class="descricao">
+            <div class="texto">
+                <p class="views">313 visualizações Estreou em 18 de jun. de 2024 <a href="https://www.youtube.com/hashtag/css">#CSS</a> <a href="https://www.youtube.com/hashtag/webdesign">#HTML</a> <a href="https://www.youtube.com/hashtag/webdesign">#WebDesign</a></p>
+                <p><a href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2NaN0lnRkw3empaRk1KSl9xRHljaTk3Q0N0QXxBQ3Jtc0ttdkdlRE9BazdLVms5MTFmenhKZHJ4MGNPTndwV3lOQnZyckxmRjJWbEV0M0tXTTBTa29ST0szR2M0dkd6aURVNFFpVmstcnc1WDI4Y1Y3R3FLaFItNXhmcHpTTVVZODV0QlhOQXBtVG1Pa2FhNDJmYw&q=https%3A%2F%2Fc.dio.me%2Fcss&v=fypvUT4vBsA">✅https://c.dio.me/css</a></p>
+                <br>
+                <p>🟢 Libere acesso ilimitado a bootcamps, formações, cursos, projetos práticos e todo o DIO PRO com 70%
+                </p>
+                <br>
+                <p>
+                    📍 Sabe aquelas páginas web que impressionam pela experiência visual? É o CSS que faz isso! Essencial para desenvolvedores front-end, o CSS dá vida às interfaces de sites como Google, Facebook e Amazon. Com cerca de 21 mil vagas e salários de até 13 mil reais, a demanda por profissionais de CSS só cresce.
+                    <br>
+                    <br>
+                    Nossa formação de 43 horas te ensina desde organizar estilos até criar animações incríveis. No final, você ainda sai com um projeto prático: o clone do site da HBO Max. <br> Invista na sua carreira com o DIO.pro e tenha acesso à formação CSS Web Developer e mais de 40 outras formações!
+                </p>
+            </div>
+        </div>
         <div class="comentarios"></div>
 
     </main>
