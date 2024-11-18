@@ -15,3 +15,68 @@ document.addEventListener("click", (event) => {
     menuList.classList.remove("menu-list-visible");
   }
 });
+// Like e Deslike Animação
+let likeCount = 0;
+let dislikeCount = 0;
+let isLiked = false;
+let isDisliked = false;
+
+const likeUpBtn = document.querySelector(".like-up");
+const likeDownBtn = document.querySelector(".like-down");
+const likeCountSpan = document.getElementById("likeCount");
+const dislikeCountSpan = document.getElementById("dislikeCount");
+
+likeUpBtn.addEventListener("click", () => {
+  if (!isLiked) {
+    likeCount++;
+    if (isDisliked) {
+      dislikeCount--;
+      isDisliked = false;
+      likeDownBtn.classList.remove("active");
+    }
+    isLiked = true;
+    likeUpBtn.classList.add("active");
+  } else {
+    likeCount--;
+    isLiked = false;
+    likeUpBtn.classList.remove("active");
+  }
+  updateCounts();
+});
+
+likeDownBtn.addEventListener("click", () => {
+  if (!isDisliked) {
+    dislikeCount++;
+    if (isLiked) {
+      likeCount--;
+      isLiked = false;
+      likeUpBtn.classList.remove("active");
+    }
+    isDisliked = true;
+    likeDownBtn.classList.add("active");
+  } else {
+    dislikeCount--;
+    isDisliked = false;
+    likeDownBtn.classList.remove("active");
+  }
+  updateCounts();
+});
+
+function updateCounts() {
+  likeCountSpan.textContent = likeCount;
+  dislikeCountSpan.textContent = dislikeCount;
+}
+// Botão de incrição
+const inscreverBtn = document.querySelector(".inscrever");
+
+inscreverBtn.addEventListener("click", () => {
+  if (inscreverBtn.classList.contains("inscrito")) {
+    // Voltar para "Inscrever-se"
+    inscreverBtn.classList.remove("inscrito");
+    inscreverBtn.textContent = "Inscrever-se";
+  } else {
+    // Mudar para "Inscrito"
+    inscreverBtn.classList.add("inscrito");
+    inscreverBtn.textContent = "Inscrito";
+  }
+});

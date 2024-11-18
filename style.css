@@ -146,6 +146,7 @@ iframe {
   margin-top: 10px;
   display: flex;
   margin-left: 130px;
+  color: #fff;
 }
 .video-main {
   display: flex;
@@ -155,15 +156,17 @@ iframe {
   display: flex;
   gap: 10px;
 }
-.img-canal {
+#img-canal {
   display: flex;
   width: 50px;
   margin-left: 125px;
+  object-fit: cover;
 }
 .canal {
   display: flex;
   flex-direction: column;
   margin-left: -10px;
+  color: #fff;
 }
 .verificado {
   width: 11px;
@@ -175,12 +178,13 @@ iframe {
   border: none;
   width: 110px;
   height: 35px;
-  background: #aecacf;
+  background: #444444;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-left: 30px;
   margin-top: 7px;
+  transition: background-color 0.3s;
 }
 .inscrever {
   background: none;
@@ -189,13 +193,19 @@ iframe {
   cursor: pointer;
   width: 115px;
   height: 35px;
+  color: #ffff;
+}
+.inscrever.inscrito {
+  border-radius: 15px;
+  background-color: #0073e6;
+  color: white;
 }
 .like {
   border-radius: 15px;
   border: none;
   width: 115px;
   height: 35px;
-  background: #aecacf;
+  background: #444444;
   margin-top: 7px;
   display: flex;
   justify-content: space-around;
@@ -206,19 +216,30 @@ iframe {
   background: none;
   border: none;
   font-size: 20px;
+  color: #ffff;
+  transition: color 0.3s;
 }
 .like-down {
   cursor: pointer;
   background: none;
   border: none;
   font-size: 20px;
+  color: #ffff;
+  transition: color 0.3s;
+}
+
+.like button:hover {
+  color: #0073e6;
+}
+.like button.active {
+  color: #0073e6;
 }
 .share {
   border-radius: 15px;
   border: none;
   width: 115px;
   height: 35px;
-  background: #aecacf;
+  background: #444444;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -229,6 +250,7 @@ iframe {
   border: none;
   font-size: 15px;
   cursor: pointer;
+  color: #ffff;
 }
 .info-canal {
   display: flex;
@@ -239,6 +261,7 @@ iframe {
   display: flex;
   margin-left: 500px;
   gap: 10px;
+  color: #ffff;
 }
 .descricao {
   display: flex;
@@ -246,10 +269,24 @@ iframe {
   margin-left: 125px;
   width: 1130px;
   height: 400px;
-  background-color: rgb(223, 228, 235);
+  background-color: #444444;
   border-radius: 10px;
   margin-top: 10px;
 }
 .texto {
   padding: 10px;
+  color: #fff;
+}
+.views {
+  text-decoration: none;
+}
+.hastag {
+  text-decoration: none;
+  color: #3ea6ff;
+}
+.shorts {
+  display: flex;
+  margin-top: -64%;
+  margin-left: 75%;
+  color: #fff;
 }
