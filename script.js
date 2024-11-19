@@ -80,3 +80,9 @@ inscreverBtn.addEventListener("click", () => {
     inscreverBtn.textContent = "Inscrito";
   }
 });
+// Abrir os links em uma nova guia
+document.querySelectorAll("a").forEach(function (link) {
+  if (!link.classList.contains("ignore") && !link.getAttribute("data-ignore")) {
+    link.setAttribute("target", "_blank");
+  }
+});

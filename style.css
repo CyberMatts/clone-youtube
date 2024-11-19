@@ -1,9 +1,16 @@
 * {
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
 body {
   background-color: #0f0f0f;
+}
+a {
+  text-decoration: none;
+}
+main {
+  margin-top: -10px;
 }
 #logo-top {
   width: 140px;
@@ -38,6 +45,7 @@ body {
 .icon {
   filter: brightness(0) invert(1);
 }
+
 #menuList {
   cursor: default;
   background-color: #0f0f0f;
@@ -90,16 +98,15 @@ body {
 .you {
   font-weight: bold;
 }
-#icons-profile {
+.icons-profile {
   display: flex;
+  margin-left: 950px;
   gap: 10px;
 }
 .search-bar-container {
   display: flex;
-  align-items: center;
   max-width: 600px;
   width: 100%;
-  margin: 20px auto;
 }
 
 .search-input {
@@ -141,7 +148,9 @@ iframe {
   border-radius: 10px;
   max-width: 800x;
 }
-
+.inscritos {
+  color: #acacac;
+}
 .video-description {
   margin-top: 10px;
   display: flex;
@@ -169,8 +178,8 @@ iframe {
   color: #fff;
 }
 .verificado {
-  width: 11px;
-  margin-bottom: 6px;
+  width: 13px;
+  margin-top: 6px;
 }
 
 .sub {
@@ -284,9 +293,44 @@ iframe {
   text-decoration: none;
   color: #3ea6ff;
 }
+
 .shorts {
-  display: flex;
-  margin-top: -64%;
-  margin-left: 75%;
+  margin-top: -65.5%;
+  margin-left: 70%;
   color: #fff;
+}
+.burro,
+.qual-linguagem {
+  text-align: left;
+  font-size: 13px;
+}
+.videos-shorts {
+  display: flex;
+  gap: 10px;
+}
+.programa-burro-1 {
+  max-width: 200px;
+  color: #fff;
+}
+.videos {
+  display: grid;
+  margin-left: 70%;
+  color: #fff;
+}
+.video-1 {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.nome-canal1 {
+  cursor: pointer;
+  font-size: 12px;
+  color: #acacac;
+  border-radius: 3px;
+}
+
+.visualizacoes {
+  font-size: 12px;
+  margin-top: 6px;
 }

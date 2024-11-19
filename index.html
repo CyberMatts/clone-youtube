@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <script src="https://kit.fontawesome.com/829797727a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,7 +19,6 @@
                 <button class="search-button" title="pesquisar">
                     <span class="search-icon"><img src="./img/pesquisa.svg" alt="pesquisar"></span></button>
                 </button>
-
             </div>
             <div class="icons-profile">
                 <div id="criar" class="icon"> <img src="./img/criar.svg" alt="Upload"></div>
@@ -68,8 +68,8 @@
     <main>
         <div class="video-main">
             <div id="video">
-                <iframe width="1236" height="695" src="https://www.youtube.com/embed/fypvUT4vBsA" title="Domine o CSS e Impressione com Experiências Visuais Incríveis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </h2>
+                <iframe class="youtube-frame" width="1236" height="695" src="https://www.youtube.com/embed/fypvUT4vBsA?autoplay=1&mute=0" title="Domine o CSS e Impressione com Experiências Visuais Incríveis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen; autoplay; encrypted-media">
+                </iframe>
             </div>
             <div class="video-description">
                 <h2>Domine o CSS e Impressione com Experiências Visuais Incríveis
@@ -81,7 +81,7 @@
                 </div>
                 <div class="canal">
                     <h2>DIO</h2>
-                    <p>200 mil inscritos</p>
+                    <p class="inscritos">200 mil inscritos</p>
                 </div>
                 <div class="sub">
                     <button class="inscrever">
@@ -124,17 +124,82 @@
         </div>
         <div id="recomendados">
             <section class="shorts">
-                <h2><img class="shorts-red" src="./img/Shorts-Red.svg" alt="">Shorts</h2>
+                <div class="shorts-red">
+                    <h2><img src="./img/Shorts-Red.svg" alt="">Shorts</h2>
+                </div>
+                <div class="videos-shorts">
+                    <div class="programa-burro-1">
+                        <a class="border-shorts" href="https://www.youtube.com/shorts/w9virlmQuZ0"><img src="./img/oar2.png" alt="" width="150px"></a>
+                        <p class="burro"> Você é um programador...</p>
+                    </div>
+                    <div class="linguagem">
+                        <a class="border-shorts" href="https://www.youtube.com/shorts/TxWk858GH7s"><img src="./img/linguagem.jpg" alt="" width="150px"></a>
+                        <p class="qual-linguagem">Qual linguagem escolher?</p>
+                    </div>
+                    <div class="linguagem">
+                        <a class="border-shorts" href="https://www.youtube.com/shorts/ZG52Aw7cv6o"><img src="./img/popular-linguagem.jpg" alt="" width="150px"></a>
+                        <p class="qual-linguagem">Linguagem mais popular</p>
+                    </div>
+                </div>
+                <hr style="background-color:gray ; width:84%; margin-top: 20px;">
+            </section>
+            <section class="videos">
+                <div class="videos-recomendados">
+                    <div class="video-1">
+                        <a href="https://www.youtube.com/watch?v=22nd99SLgNA"><img src="./img/recomendados/manualDM.jpeg" alt="" width="210px"></a>
+                        <div class="descricao-recomendados">
+                            <p class="descricao-recomend1" title="Como funcionam as LINGUAGENS de PROGRAMAÇÃO #SagaDosComputadores Ep. 8
+                            ">
+                                Como funcionam as LINGUAGENS <br>de PROGRAMAÇÃO
+                            </p>
+                            <p title=" Manual do Mundo">
+                                <a class="nome-canal1" href="https://www.youtube.com/@manualdomundo">Manual do Mundo <img class="verificado" src="./img/verificado.png" alt="Simbolo de verificado" title="Verificado"></a>
+                            </p>
+                            <p class="visualizacoes">
+                                1,2 mi de visualizações há 2 anos
+                            </p>
+                        </div>
+                    </div>
+                    <div class="video-1">
+                        <a href="https://www.youtube.com/watch?v=XEE-nWFwOp4"><img src="./img/recomendados/Area-tech-BR.jpeg" alt="Video do youtube" width="210px">
+                        </a>
+                        <div class="descricao-recomendados">
+                            <p class="descricao-recomend1">
+                                O JEITO CERTO DO TDAH ESTUDAR PROGRAMAÇÃO
+                            </p>
+                            <p title=" Área Tech Brasil">
+                                <a class="nome-canal1" href="https://www.youtube.com/@manualdomundo">Área Tech Brasil<img class="verificado" src="./img/verificado.png" alt="Simbolo de verificado" title="Verificado"></a>
+                            </p>
+                            <p class="visualizacoes">
+                                24 mil visualizações há 1 mês
+                            </p>
+                        </div>
+                    </div>
+                    <div class="video-1">
+                        <a href=https://www.youtube.com/watch?v=3oKT5Oz1bTU> <img src="./img/recomendados/attekita.jpeg" alt="" width="210px"></a>
+                        <div class="descricao-recomendados">
+                            <p class="descricao-recomend1" title="Python Para Iniciantes: Um Panorama Geral Sobre a Linguagem + ROADMAP de Estudos">
+                                Python Para Iniciantes Um Panorama <br> Geral Sobre a Linguagem
+                            </p>
+                            <p title=" Attekita Dev">
+                                <a class="nome-canal1" href="https://www.youtube.com/@manualdomundo">Attekita Dev<img class="verificado" src="./img/verificado.png" alt="Simbolo de verificado" title="Verificado"></a>
+                            </p>
+                            <p class="visualizacoes">
+                                65 mil visualizações há 8 meses
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
-        <div class="comentarios"></div>
+        <div class=" comentarios">
+        </div>
 
     </main>
     <footer>
 
     </footer>
     <script src="script.js"></script>
-
 </body>
 
 </html>
