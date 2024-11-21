@@ -25,6 +25,10 @@ main {
   width: 140px;
   margin-top: -20px;
 }
+.logo-dio {
+  border-radius: 50px;
+  width: 50px;
+}
 .icons-profile {
   margin-top: -20px;
   margin-right: 10px;
@@ -32,6 +36,10 @@ main {
 .btn-profille {
   background: none;
   border: none;
+}
+.img-profile {
+  border-radius: 100px;
+  width: 30px;
 }
 
 /* Muda a cor dos icon */
@@ -174,7 +182,7 @@ iframe {
 .canal {
   display: flex;
   flex-direction: column;
-  margin-left: -10px;
+  margin-left: -2px;
   color: #fff;
 }
 .verificado {
