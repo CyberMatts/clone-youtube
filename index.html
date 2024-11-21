@@ -13,62 +13,85 @@
 <body>
     <header>
         <div class="cabeca">
-            <img id="logo-top" class="logo" src="./img/YouTube-Logo.wine.svg" alt="logo do Youtube">
+            <div class="menu-logo">
+                <div>
+                    <button class="btn-menu" title="menu"><img src="./img/menu.svg" alt="">
+                    </button>
+                </div>
+                <div>
+                    <img id="logo-top" class="logo" src="./img/YouTube-Logo.wine.svg" alt="logo do Youtube">
+                </div>
+            </div>
+            <!-- Barra de pesquisa -->
             <div class="search-bar-container">
                 <input type="text" class="search-input" placeholder="Pesquisar">
                 <button class="search-button" title="pesquisar">
-                    <span class="search-icon"><img src="./img/pesquisa.svg" alt="pesquisar"></span></button>
+                    <span class="search-icon">
+                        <img src="./img/pesquisa.svg" alt="pesquisar">
+                    </span>
                 </button>
             </div>
+            <!-- Ícones de perfil -->
             <div class="icons-profile">
-                <div id="criar" class="icon"> <img src="./img/criar.svg" alt="Upload"></div>
-                <div id="notificacoes" class="icon"><img src="./img/notificação.svg" alt=""></div>
-                <div id="profille" class="icon"><img src="./img/profille.svg" alt="profile"></div>
+                <button class="btn-profille">
+                    <img class="icon" src="./img/criar.svg" alt="Upload">
+                </button>
+                <button class="btn-profille">
+                    <img class="icon" src="./img/notificação.svg" alt="Notificação">
+                </button>
+                <button class="btn-profille">
+                    <img class="icon" src="./img/profille.svg" alt="Perfil">
+                </button>
             </div>
-            <button class="btn-menu" title="menu"><img src="./img/menu.svg" alt="">
-            </button>
-            <div id="menu">
-                <nav id="menuList" class="menu-list-hidden">
-                    <ul class="list">
-                        <div class="div-list">
-                            <button class="btn-list"> <img class="icon" src=" ./img/inicio.svg" alt="">
-                                <span class="span-li">Inicio</span>
-                            </button>
-                            <button class="btn-list"><img class="icon" src="./img/shorts.svg" alt="shorts">
-                                <span class="span-li">Shorts</span>
-                            </button>
-                            <button class="btn-list"><img class="icon" src="./img/inscrições.svg" alt="inscrições">
-                                <span class="span-li">Inscrições</span>
-                            </button>
-                        </div>
-                        <p class="you">Você</p>
-                        <button class="btn-list"><img class="icon" src="./img/historico.svg" alt="Hístico">
-                            <span class="span-li">Hístico</span>
-                        </button>
-                        <button class="btn-list"><img class="icon" src="./img/playlist.svg" alt="Playlists">
-                            <span class="span-li">Playlists</span>
-                        </button>
-                        <button class="btn-list"><img class="icon" src="./img/seus-videos.svg" alt="Seus vídeos">
-                            <span class="span-li">Seus vídeos</span>
-                        </button>
-                        <button class="btn-list"><img class="icon" src="./img/mais-tarde.svg" alt="Assistir mais tarde">
-                            <span class="span-li">Assistir mais tarde</span>
-                        </button>
-                        <button class="btn-list"><img class="icon" src="./img/videos-que-gostei.svg" alt="Vídeos com Gostei">
-                            <span class="span-li">Vídeos com Gostei</span>
-                        </button>
-                        <button class="btn-list"><img class="icon" src="./img/clips.svg" alt="Seus Clipes">
-                            <span class="span-li">Seus Clipes</span>
-                        </button>
-                    </ul>
-                </nav>
-            </div>
+
         </div>
+
     </header>
+    <!-- Menu lateral -->
+    <div id="menu">
+        <nav id="menuList" class="menu-list-hidden">
+            <ul class="list">
+                <div class="div-list">
+                    <button class="btn-list"> <img class="icon" src=" ./img/inicio.svg" alt="">
+                        <span class="span-li">Inicio</span>
+                    </button>
+                    <button class="btn-list"><img class="icon" src="./img/shorts.svg" alt="shorts">
+                        <span class="span-li">Shorts</span>
+                    </button>
+                    <button class="btn-list"><img class="icon" src="./img/inscrições.svg" alt="inscrições">
+                        <span class="span-li">Inscrições</span>
+                    </button>
+                </div>
+                <p class="you">Você</p>
+                <button class="btn-list"><img class="icon" src="./img/historico.svg" alt="Hístico">
+                    <span class="span-li">Hístico</span>
+                </button>
+                <button class="btn-list"><img class="icon" src="./img/playlist.svg" alt="Playlists">
+                    <span class="span-li">Playlists</span>
+                </button>
+                <button class="btn-list"><img class="icon" src="./img/seus-videos.svg" alt="Seus vídeos">
+                    <span class="span-li">Seus vídeos</span>
+                </button>
+                <button class="btn-list"><img class="icon" src="./img/mais-tarde.svg" alt="Assistir mais tarde">
+                    <span class="span-li">Assistir mais tarde</span>
+                </button>
+                <button class="btn-list"><img class="icon" src="./img/videos-que-gostei.svg" alt="Vídeos com Gostei">
+                    <span class="span-li">Vídeos com Gostei</span>
+                </button>
+                <button class="btn-list"><img class="icon" src="./img/clips.svg" alt="Seus Clipes">
+                    <span class="span-li">Seus Clipes</span>
+                </button>
+            </ul>
+        </nav>
+    </div>
+    <!-- Video Principal -->
     <main>
+        <div>
+            <p>asas</p>
+        </div>
         <div class="video-main">
             <div id="video">
-                <iframe class="youtube-frame" width="1236" height="695" src="https://www.youtube.com/embed/fypvUT4vBsA?autoplay=1&mute=0" title="Domine o CSS e Impressione com Experiências Visuais Incríveis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen; autoplay; encrypted-media">
+                <iframe class="youtube-frame" width="1236" height="695" src="https://www.youtube.com/embed/fypvUT4vBsA?=1&mute=0" title="Domine o CSS e Impressione com Experiências Visuais Incríveis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen; autoplay; encrypted-media">
                 </iframe>
             </div>
             <div class="video-description">

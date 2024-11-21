@@ -12,48 +12,52 @@ a {
 main {
   margin-top: -10px;
 }
-#logo-top {
-  width: 140px;
-  margin-left: 50px;
-}
-
 .cabeca {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  cursor: pointer;
-  background-color: #0f0f0f;
-  position: fixed;
-  width: 100%;
 }
-#menu {
+.menu-logo {
   display: flex;
-  position: fixed;
+  margin-top: px;
 }
-.btn-menu {
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: fixed;
-  filter: brightness(0) invert(1);
-  margin-left: 20px;
+#logo-top {
+  width: 140px;
+  margin-top: -20px;
 }
 .icons-profile {
-  display: flex;
+  margin-top: -20px;
   margin-right: 10px;
-  gap: 10px;
 }
+.btn-profille {
+  background: none;
+  border: none;
+}
+
+/* Muda a cor dos icon */
 .icon {
   filter: brightness(0) invert(1);
 }
-
+/* Menu  lateral */
+.btn-menu {
+  display: flex;
+  background: none;
+  border: none;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+  margin-left: 20px;
+  margin-top: 17px;
+}
+#menu {
+  display: flex;
+}
 #menuList {
   cursor: default;
   background-color: #0f0f0f;
   color: #ffffff;
   transition: transform 0.3s ease;
   width: 210px;
-  top: 45px;
-  height: 1000px;
+  height: 100%;
   font-size: 18px;
 }
 .menu-list-hidden {
@@ -62,10 +66,10 @@ main {
 .menu-list-visible {
   display: flex;
   position: absolute;
-  top: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1em;
   text-align: center;
+  margin-top: -30px;
 }
 .span-li {
   margin-left: 10px;
@@ -98,19 +102,17 @@ main {
 .you {
   font-weight: bold;
 }
-.icons-profile {
-  display: flex;
-  margin-left: 950px;
-  gap: 10px;
-}
+/* Final menu lateral */
+
 .search-bar-container {
   display: flex;
-  max-width: 600px;
-  width: 100%;
+  max-width: 100%;
+  margin-top: -17px;
+  margin-right: 90px;
 }
 
 .search-input {
-  width: 100%;
+  width: 450px;
   padding: 10px 15px;
   font-size: 16px;
   border: 1px solid #ddd;
@@ -130,16 +132,14 @@ main {
   cursor: pointer;
   color: white;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .search-icon {
   font-size: 20px;
 }
-
+/* Corpo da página*/
 #video {
-  margin-top: 150px;
+  margin-top: 50px;
   display: flex;
   margin-left: 130px;
   max-width: 60%;
