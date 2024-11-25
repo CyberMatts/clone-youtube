@@ -44,7 +44,6 @@
                     <img class="img-profile" src="./img/Profile/gen.png" alt="Perfil">
                 </button>
             </div>
-
         </div>
 
     </header>
@@ -52,18 +51,19 @@
     <div id="menu">
         <nav id="menuList" class="menu-list-hidden">
             <ul class="list">
-                <div class="div-list">
-                    <button class="btn-list"> <img class="icon" src=" ./img/inicio.svg" alt="">
-                        <span class="span-li">Inicio</span>
-                    </button>
-                    <button class="btn-list"><img class="icon" src="./img/shorts.svg" alt="shorts">
-                        <span class="span-li">Shorts</span>
-                    </button>
-                    <button class="btn-list"><img class="icon" src="./img/inscrições.svg" alt="inscrições">
-                        <span class="span-li">Inscrições</span>
-                    </button>
+                <button class="btn-list"> <img class="icon" src=" ./img/inicio.svg" alt="">
+                    <span class="span-li">Inicio</span>
+                </button>
+                <button class="btn-list"><img class="icon" src="./img/shorts.svg" alt="shorts">
+                    <span class="span-li">Shorts</span>
+                </button>
+                <button class="btn-list"><img class="icon" src="./img/inscrições.svg" alt="inscrições">
+                    <span class="span-li">Inscrições</span>
+                </button>
+                <hr style="background-color:#9b9b9b ; width:100%;">
+                <div class="you-list">
+                    <p class="you">Você <i id="icon-you" class="fa-solid fa-chevron-right"></i></p>
                 </div>
-                <p class="you">Você</p>
                 <button class="btn-list"><img class="icon" src="./img/historico.svg" alt="Hístico">
                     <span class="span-li">Hístico</span>
                 </button>
@@ -87,152 +87,153 @@
     </div>
     <!-- Video Principal -->
     <main>
-        <div>
-
-        </div>
-        <div class="video-main">
-            <div id="video">
-                <iframe class="youtube-frame" width="1236" height="695" src="https://www.youtube.com/embed/fypvUT4vBsA?=1&mute=0" title="Domine o CSS e Impressione com Experiências Visuais Incríveis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allow="fullscreen; autoplay; encrypted-media">
-                </iframe>
-            </div>
-            <div class="video-description">
-                <h2>Domine o CSS e Impressione com Experiências Visuais Incríveis
-                </h2>
-            </div>
-            <section class="botoes">
-                <div id="img-canal">
-                    <img class="logo-dio" src="./img/logo-dio.jpg" alt="">
+        <div class="main-box">
+            <div class="video-main">
+                <div>
+                    <video class="video" autoplay="autoplay" controls="controls">
+                        <source src="./video/Domine o CSS e Impressione com Experiências Visuais Incríveis.mp4">
+                    </video>
                 </div>
-                <div class="canal">
-                    <h2>DIO</h2>
-                    <p class="inscritos">200 mil inscritos</p>
+                <div class="video-description">
+                    <h2>Domine o CSS e Impressione com Experiências Visuais Incríveis
+                    </h2>
                 </div>
-                <div class="sub">
-                    <button class="inscrever">
-                        Inscrever-se
-                    </button>
-                </div>
-                <div class="like-share">
-                    <div class="like">
-                        <button class="like-up">
-                            <i class="fa-regular fa-thumbs-up"></i> <span id="likeCount">0</span>
-                        </button>
-                        |
-                        <button class="like-down">
-                            <i class="fa-regular fa-thumbs-down"></i> <span id="dislikeCount">0</span>
+                <section class="botoes">
+                    <div id="img-canal">
+                        <img class="logo-dio" src="./img/logo-dio.jpg" alt="">
+                    </div>
+                    <div class="canal">
+                        <h2>DIO</h2>
+                        <p class="inscritos">200 mil inscritos</p>
+                    </div>
+                    <div class="sub">
+                        <button class="inscrever">
+                            Inscrever-se
                         </button>
                     </div>
-                    <div class="share">
-                        <button class="share-button">
-                            <i class="fa-solid fa-share"></i> Compartilhar
-                        </button>
+                    <div class="like-share">
+                        <div class="like">
+                            <button class="like-up">
+                                <i class="fa-regular fa-thumbs-up"></i> <span id="likeCount">0</span>
+                            </button>
+                            |
+                            <button class="like-down">
+                                <i class="fa-regular fa-thumbs-down"></i> <span id="dislikeCount">0</span>
+                            </button>
+                        </div>
+                        <div class="share">
+                            <button class="share-button">
+                                <i class="fa-solid fa-share"></i> Compartilhar
+                            </button>
+                        </div>
                     </div>
-                </div>
-            </section>
-        </div>
-        <div class="descricao">
-            <div class="texto">
-                <p class="views">313 visualizações Estreou em 18 de jun. de 2024 <a class="hastag" href="https://www.youtube.com/hashtag/css">#CSS</a> <a class="hastag" href="https://www.youtube.com/hashtag/webdesign">#HTML</a> <a class="hastag" href="https://www.youtube.com/hashtag/webdesign">#WebDesign</a></p>
-                <p><a class="hastag" href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2NaN0lnRkw3empaRk1KSl9xRHljaTk3Q0N0QXxBQ3Jtc0ttdkdlRE9BazdLVms5MTFmenhKZHJ4MGNPTndwV3lOQnZyckxmRjJWbEV0M0tXTTBTa29ST0szR2M0dkd6aURVNFFpVmstcnc1WDI4Y1Y3R3FLaFItNXhmcHpTTVVZODV0QlhOQXBtVG1Pa2FhNDJmYw&q=https%3A%2F%2Fc.dio.me%2Fcss&v=fypvUT4vBsA">✅https://c.dio.me/css</a></p>
-                <br>
-                <p>🟢 Libere acesso ilimitado a bootcamps, formações, cursos, projetos práticos e todo o DIO PRO com 70%
-                </p>
-                <br>
-                <p>
-                    📍 Sabe aquelas páginas web que impressionam pela experiência visual? É o CSS que faz isso! Essencial para desenvolvedores front-end, o CSS dá vida às interfaces de sites como Google, Facebook e Amazon. Com cerca de 21 mil vagas e salários de até 13 mil reais, a demanda por profissionais de CSS só cresce.
+                </section>
+            </div>
+            <div class="descricao">
+                <div class="texto">
+                    <p class="views">313 visualizações Estreou em 18 de jun. de 2024 <a class="hastag" href="https://www.youtube.com/hashtag/css">#CSS</a> <a class="hastag" href="https://www.youtube.com/hashtag/webdesign">#HTML</a> <a class="hastag" href="https://www.youtube.com/hashtag/webdesign">#WebDesign</a></p>
+                    <p><a class="hastag" href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2NaN0lnRkw3empaRk1KSl9xRHljaTk3Q0N0QXxBQ3Jtc0ttdkdlRE9BazdLVms5MTFmenhKZHJ4MGNPTndwV3lOQnZyckxmRjJWbEV0M0tXTTBTa29ST0szR2M0dkd6aURVNFFpVmstcnc1WDI4Y1Y3R3FLaFItNXhmcHpTTVVZODV0QlhOQXBtVG1Pa2FhNDJmYw&q=https%3A%2F%2Fc.dio.me%2Fcss&v=fypvUT4vBsA">✅https://c.dio.me/css</a></p>
                     <br>
+                    <p>🟢 Libere acesso ilimitado a bootcamps, formações, cursos, projetos práticos e todo o DIO PRO com 70%
+                    </p>
                     <br>
-                    Nossa formação de 43 horas te ensina desde organizar estilos até criar animações incríveis. No final, você ainda sai com um projeto prático: o clone do site da HBO Max. <br> Invista na sua carreira com o DIO.pro e tenha acesso à formação CSS Web Developer e mais de 40 outras formações!
-                </p>
+                    <p>
+                        📍 Sabe aquelas páginas web que impressionam pela experiência visual? É o CSS que faz isso! Essencial para desenvolvedores front-end, o CSS dá vida às interfaces de sites como Google, Facebook e Amazon. Com cerca de 21 mil vagas e salários de até 13 mil reais, a demanda por profissionais de CSS só cresce.
+                        <br>
+                        <br>
+                        Nossa formação de 43 horas te ensina desde organizar estilos até criar animações incríveis. No final, você ainda sai com um projeto prático: o clone do site da HBO Max. <br> Invista na sua carreira com o DIO.pro e tenha acesso à formação CSS Web Developer e mais de 40 outras formações!
+                    </p>
+                </div>
+            </div>
+            <div class=" comentarios">
             </div>
         </div>
-        <div id="recomendados">
-            <section class="shorts">
-                <div class="shorts-red">
-                    <h2><img src="./img/Shorts-Red.svg" alt="">Shorts</h2>
-                </div>
-                <div class="videos-shorts">
-                    <div class="programa-burro-1">
-                        <a class="border-shorts" href="https://www.youtube.com/shorts/w9virlmQuZ0"><img src="./img/oar2.png" alt="" width="150px"></a>
-                        <p class="burro"> Você é um programador...</p>
+        <div class="aside">
+            <div id="recomendados">
+                <section class="shorts">
+                    <div class="shorts-red">
+                        <h2><img src="./img/Shorts-Red.svg" alt="">Shorts</h2>
                     </div>
-                    <div class="linguagem">
-                        <a class="border-shorts" href="https://www.youtube.com/shorts/TxWk858GH7s"><img src="./img/linguagem.jpg" alt="" width="150px"></a>
-                        <p class="qual-linguagem">Qual linguagem escolher?</p>
-                    </div>
-                    <div class="linguagem">
-                        <a class="border-shorts" href="https://www.youtube.com/shorts/ZG52Aw7cv6o"><img src="./img/popular-linguagem.jpg" alt="" width="150px"></a>
-                        <p class="qual-linguagem">Linguagem mais popular</p>
-                    </div>
-                </div>
-                <hr style="background-color:gray ; width:84%; margin-top: 20px;">
-            </section>
-            <section class="videos">
-                <div class="videos-recomendados">
-                    <div class="video-1">
-                        <a href="https://www.youtube.com/watch?v=22nd99SLgNA"><img src="./img/recomendados/manualDM.jpeg" alt="" width="210px"></a>
-                        <div class="descricao-recomendados">
-                            <p class="descricao-recomend1" title="Como funcionam as LINGUAGENS de PROGRAMAÇÃO #SagaDosComputadores Ep. 8
-                            ">
-                                Como funcionam as LINGUAGENS <br>de PROGRAMAÇÃO
-                            </p>
-                            <p title=" Manual do Mundo">
-                                <a class="nome-canal1" href="https://www.youtube.com/@manualdomundo">Manual do Mundo <img class="verificado" src="./img/verificado.png" alt="Simbolo de verificado" title="Verificado"></a>
-                            </p>
-                            <p class="visualizacoes">
-                                1,2 mi de visualizações há 2 anos
-                            </p>
+                    <div class="videos-shorts">
+                        <div class="programa-burro-1">
+                            <a class="border-shorts" href="https://www.youtube.com/shorts/w9virlmQuZ0"><img src="./img/oar2.png" alt="" width="150px"></a>
+                            <p class="burro"> Você é um programador...</p>
+                        </div>
+                        <div class="linguagem">
+                            <a class="border-shorts" href="https://www.youtube.com/shorts/TxWk858GH7s"><img src="./img/linguagem.jpg" alt="" width="150px"></a>
+                            <p class="qual-linguagem">Qual linguagem escolher?</p>
+                        </div>
+                        <div class="linguagem">
+                            <a class="border-shorts" href="https://www.youtube.com/shorts/ZG52Aw7cv6o"><img src="./img/popular-linguagem.jpg" alt="" width="150px"></a>
+                            <p class="qual-linguagem">Linguagem mais popular</p>
                         </div>
                     </div>
-                    <div class="video-1">
-                        <a href="https://www.youtube.com/watch?v=XEE-nWFwOp4"><img src="./img/recomendados/Area-tech-BR.jpeg" alt="Video do youtube" width="210px">
-                        </a>
-                        <div class="descricao-recomendados">
-                            <p class="descricao-recomend1">
-                                O JEITO CERTO DO TDAH ESTUDAR PROGRAMAÇÃO
-                            </p>
-                            <p title=" Área Tech Brasil">
-                                <a class="nome-canal1" href="https://www.youtube.com/@manualdomundo">Área Tech Brasil<img class="verificado" src="./img/verificado.png" alt="Simbolo de verificado" title="Verificado"></a>
-                            </p>
-                            <p class="visualizacoes">
-                                24 mil visualizações há 1 mês
-                            </p>
+                    <hr style="background-color:gray ; width:74%; margin-top: 20px;">
+                </section>
+                <section class="videos">
+                    <div class="videos-recomendados">
+                        <div class="video-1">
+                            <a href="https://www.youtube.com/watch?v=22nd99SLgNA"><img src="./img/recomendados/manualDM.jpeg" alt="" width="210px"></a>
+                            <div class="descricao-recomendados">
+                                <p class="descricao-recomend1" title="Como funcionam as LINGUAGENS de PROGRAMAÇÃO #SagaDosComputadores Ep. 8
+                                ">
+                                    Como funcionam as LINGUAGENS <br>de PROGRAMAÇÃO
+                                </p>
+                                <p title=" Manual do Mundo">
+                                    <a class="nome-canal1" href="https://www.youtube.com/@manualdomundo">Manual do Mundo <img class="verificado" src="./img/verificado.png" alt="Simbolo de verificado" title="Verificado"></a>
+                                </p>
+                                <p class="visualizacoes">
+                                    1,2 mi de visualizações há 2 anos
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="video-1">
-                        <a href=https://www.youtube.com/watch?v=3oKT5Oz1bTU> <img src="./img/recomendados/attekita.jpeg" alt="" width="210px"></a>
-                        <div class="descricao-recomendados">
-                            <p class="descricao-recomend1" title="Python Para Iniciantes: Um Panorama Geral Sobre a Linguagem + ROADMAP de Estudos">
-                                Python Para Iniciantes Um Panorama <br> Geral Sobre a Linguagem
-                            </p>
-                            <p title=" Attekita Dev">
-                                <a class="nome-canal1" href="https://www.youtube.com/@manualdomundo">Attekita Dev<img class="verificado" src="./img/verificado.png" alt="Simbolo de verificado" title="Verificado"></a>
-                            </p>
-                            <p class="visualizacoes">
-                                65 mil visualizações há 8 meses
-                            </p>
+                        <div class="video-1">
+                            <a href="https://www.youtube.com/watch?v=XEE-nWFwOp4"><img src="./img/recomendados/Area-tech-BR.jpeg" alt="Video do youtube" width="210px">
+                            </a>
+                            <div class="descricao-recomendados">
+                                <p class="descricao-recomend1">
+                                    O JEITO CERTO DO TDAH ESTUDAR <br> PROGRAMAÇÃO
+                                </p>
+                                <p title=" Área Tech Brasil">
+                                    <a class="nome-canal1" href="https://www.youtube.com/@manualdomundo">Área Tech Brasil<img class="verificado" src="./img/verificado.png" alt="Simbolo de verificado" title="Verificado"></a>
+                                </p>
+                                <p class="visualizacoes">
+                                    24 mil visualizações há 1 mês
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="video-1">
-                        <a href="https://www.youtube.com/watch?v=Q0YYA8hSV8g"><img src="./img/flowPDC.jpeg" alt="" width="210px"></a>
-                        <div class="descricao-recomendados">
-                            <p class="descricao-recomend1" title="Como funcionam as LINGUAGENS de PROGRAMAÇÃO #SagaDosComputadores Ep. 8
-                            ">
-                                Como funcionam as LINGUAGENS <br>de PROGRAMAÇÃO
-                            </p>
-                            <p title="Cortes do Flow [OFICIAL]">
-                                <a class="nome-canal1" href="https://www.youtube.com/@manualdomundo">Cortes do Flow [OFICIAL]<img class="verificado" src="./img/verificado.png" alt="Simbolo de verificado" title="Verificado"></a>
-                            </p>
-                            <p class="visualizacoes">
-                                462.060 visualizações 8 de ago. de 2024
-                            </p>
+                        <div class="video-1">
+                            <a href=https://www.youtube.com/watch?v=3oKT5Oz1bTU> <img src="./img/recomendados/attekita.jpeg" alt="" width="210px"></a>
+                            <div class="descricao-recomendados">
+                                <p class="descricao-recomend1" title="Python Para Iniciantes: Um Panorama Geral Sobre a Linguagem + ROADMAP de Estudos">
+                                    Python Para Iniciantes Um Panorama <br> Geral Sobre a Linguagem
+                                </p>
+                                <p title=" Attekita Dev">
+                                    <a class="nome-canal1" href="https://www.youtube.com/@manualdomundo">Attekita Dev<img class="verificado" src="./img/verificado.png" alt="Simbolo de verificado" title="Verificado"></a>
+                                </p>
+                                <p class="visualizacoes">
+                                    65 mil visualizações há 8 meses
+                                </p>
+                            </div>
                         </div>
-                    </div>
-            </section>
+                        <div id="flow" class="video-1">
+                            <a href="https://www.youtube.com/watch?v=Q0YYA8hSV8g"><img src="./img/flowPDC.jpeg" alt="" width="210px"></a>
+                            <div class="descricao-recomendados">
+                                <p class="descricao-recomend1" title="Como funcionam as LINGUAGENS de PROGRAMAÇÃO #SagaDosComputadores Ep. 8
+                                ">
+                                    Como funcionam as LINGUAGENS <br>de PROGRAMAÇÃO
+                                </p>
+                                <p title="Cortes do Flow [OFICIAL]">
+                                    <a class="nome-canal1" href="https://www.youtube.com/@manualdomundo">Cortes do Flow [OFICIAL]<img class="verificado" src="./img/verificado.png" alt="Simbolo de verificado" title="Verificado"></a>
+                                </p>
+                                <p class="visualizacoes">
+                                    462.060 visualizações 8 de ago. de 2024
+                                </p>
+                            </div>
+                        </div>
+                </section>
+            </div>
         </div>
-        <div class=" comentarios">
-        </div>
-
     </main>
     <footer>
 
